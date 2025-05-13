@@ -11,5 +11,77 @@
             </p>
         </statement>
     </definition>
+<proposition xml:id="prop-numberleaves-intree">
+    <statement>
+        <p>
+            Every finite tree with at least 2 vertices contains at least 2 leaves.
+        </p>
+    </statement>
+</proposition>
+
+<proposition xml:id="prop-trees-delete-leaf">
+    <statement>
+        <p>
+           Deleting a leaf from a tree with <m>n\geq 2</m> vertices yields a tree with <m>n-1</m> vertices. 
+        </p>
+    </statement>
+</proposition>
+<proof>
+    <p>
+        Let <m>T</m> be a tree with <m>n\geq 2</m> vertices. Let <m>u</m> be a leaf in <m>T</m>. 
+        We want to show that <m>T\backslash \{u\}</m> is acyclic (contains no cycle) and
+        connected (there is a walk connecting any pair of vertices). 
+        <ol>
+            <li>
+                <p>
+                    <m>T</m> is acyclic then <m>T\backslash \{u\}</m> is acyclic 
+                    (Taking away a vertex will not create a new cycle).
+                </p>
+            </li>
+            <li>
+                <p>
+                    Is <m>T\backslash \{u\}</m> connected? <p>
+                    Take any two vertices <m>x,y, x\neq y</m> in <m>T\backslash \{u\}</m>. 
+                    Because <m>T</m> is a tree, it is connected, there exists an <m>x-y</m> path in <m>T</m>. 
+                    Note that the degree of vertices in the middle of the path is 2, 
+                    so the removal of vertex <m>u</m> of degree 1 and the edge incident to it doesn't effect the path 
+                    <m>x-y</m>. Thus, in <m>T\backslash \{u\}</m>, the vertices
+                    <m>x</m> and <m>y</m> are still connected by a path, hence <m>T\backslash \{u\}</m> is connected.
+                </p> </p>
+            </li>
+        </ol>
+
+    </p>
+</proof>
+
+<theorem xml:id="thm-Tree-equivstatement">
+    <statement>
+        <p>
+           	Let <m>G</m> be a graph with <m>n</m> vertices. The following statements are equivalent: 
+            <ol>
+                <li>
+                    <p>
+                        <m>G</m> is a tree (connected and acyclic)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>G</m> is connected and has <m>n-1</m> edges.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>G</m> is acyclic and has $n-1$ edges
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        For every two distinct vertices of <m>G</m>, there is a unique path connecting them.
+                    </p>
+                </li>
+            </ol> 
+        </p>
+    </statement>
+</theorem>
 
 </section>  
