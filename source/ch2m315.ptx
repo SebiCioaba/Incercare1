@@ -3,17 +3,12 @@
 <chapter xml:id="ch2m315" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Trees</title>
 
+  <!-- include sections -->
+  <xi:include href="c2s1.ptx" />
 
+  <!-- include sections -->
+  <xi:include href="c2s2.ptx" />
 
-    <definition xml:id="def-tree1">
-        <statement>
-            <p>
-                A graph <m>G=(V,E)</m> is called a tree if <m>G</m> 
-                is connected and contains no cycles.
-            </p>
-        </statement>
-    </definition>
-
-    
+  
 
 </chapter>
