@@ -109,6 +109,23 @@
         </statement>
     </definition>
 
+    <proposition xml:id="prop-GraphIsomorphism">
+    <statement>
+    <p>
+	Let <m>G=(V,E)</m> and <m>H=(W,F)</m> be two graphs. If <m>G</m> and <m>H</m> are isomorphic, then
+          <ol>
+    <li><m>|V|=|W|</m></li>
+    <li>The graphs <m>G</m> and <m>H</m> have the same degree sequence.</li>
+    <li><m>|E|=|F|</m></li>
+    <li>
+          The graphs <m>G</m> and <m>H</m> have the same number of triangles. 
+    </li>
+  </ol>
+        </p>
+    </statement>
+  </proposition>
+	  
+
 
 
     
