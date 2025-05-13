@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="c1s2" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title></title>
+    <title>Graph Parameters</title>
+
+    <definition xml:id="def-propercol">
+        <statement>
+            <p>
+                Let <m>G=(V,E)</m> and <m>k\in \mathbb{N}</m>. 
+                A proper <m>k</m>-coloring of <m>G</m> 
+                is a function <m>f:V\Rightarrow \{1,\ldots,k\}</m> such that 
+                for any two adjacent vertices <m>x</m> and <m>y</m>, <m>f(x)\neq f(y)</m>.
+            </p>
+        </statement>
+    </definition>
+
+
+    <definition xml:id="def-chromnumb">
+        <statement>
+            <p>
+            Let <m>G=(V,E)</m> be a graph. The chromatic number <m>\chi(G)</m> is the 
+            smallest <m>k</m> such that <m>G</m> has a proper <m>k</m>-coloring.
+            </p>
+        </statement>
+    </definition>
 
     
-
+    
 </section>

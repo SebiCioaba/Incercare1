@@ -16,7 +16,18 @@
         </statement>
     </definition>
 
-<figure xml:id="fig:1c1s1">
+<definition xml:id="def-def2">
+        <statement>
+            <p>
+            Let <m>n\in \mathbb{N}</m>. The complete graph <m>K_n</m> with <m>n</m> vertices 
+            is the graph whose vertex set is <m>\{1,\ldots,n\}</m>, where any two distinct 
+            vertices are adjacent.
+            </p>
+        </statement>
+    </definition>
+
+
+<figure xml:id="fig1c1s1">
     <caption>The complete graph on <m>5</m> vertices</caption>
 <image width="60%">
   <prefigure xmlns="https://prefigure.org"
@@ -46,7 +57,6 @@
             mathematicians where two vertices/mathematicians are adjacent 
             if they are co-authors on a math paper. </p>
     </example>
-
 
 
     <remark>
@@ -87,7 +97,7 @@
         </statement>
     </corollary>
 
-    <definition xml:id="def-def2">
+    <definition xml:id="def-def4">
         <statement>
             <p>
             Two graphs <m>G = (V,E)</m> and <m>H=(W,F)</m> are isomorphic if 
@@ -98,6 +108,8 @@
             </p>
         </statement>
     </definition>
+
+
 
     
 

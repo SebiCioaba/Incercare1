@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="c2s1" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Basic Notions</title>
+
+<definition xml:id="def-tree1">
+        <statement>
+            <p>
+                A graph <m>G=(V,E)</m> is called a tree if <m>G</m> 
+                is connected and contains no cycles.
+            </p>
+        </statement>
+    </definition>
+
+</section>  
