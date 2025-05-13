@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="c1s1" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Examples</title>
+
+    <p>We are surrounded by networks: social (Facebook, X, Instagram), 
+    communcation (airlines, trains, highways), biological (?), collaboration (Bacon movie or Erdos collaboration).
+    In this section, we describe some examples and how one can use the tools of graph theory
+    to model them.</p>
+
+    <definition xml:id="def-def1">
+        <statement>
+            <p>
+                A graph <m>G=(V,E)</m> consists of a set of vertices <m>V</m> and a set of edges <m>E</m>, where each edge consists of 
+            </p>
+        </statement>
+    </definition>
+
+<figure xml:id="fig:1c1s1">
+    <caption>The complete graph on <m>5</m> vertices</caption>
+<image width="60%">
+  <prefigure xmlns="https://prefigure.org"
+             label="prefigure-ex1c1s1">
+<diagram dimensions="(300,300)" margins="5">
+  <definition>graph={1:[2,3,4,5],2:[3,4,5],3:[4,5],4:[5]}</definition>
+  <coordinates bbox="(-1,-1,1,1)">
+    <network directed="no" graph="graph" arrows="end"
+             scale="0.8" node-fill="#fcf" node-stroke="black"
+	     seed="2" labels="yes"
+	     tactile-node-size="40">
+    </network>
+  </coordinates>
+</diagram>
+</prefigure>
+</image>
+</figure>
+
+    <example>
+        <p>The Bacon graph is the graph whose vertices are movie actors
+            where two vertices/actors are adjacent if they 
+            have appeared together in a movie. </p>
+    </example>
+
+    <example>
+        <p>The Erdos collaboration graph is the graph whose vertices are 
+            mathematicians where two vertices/mathematicians are adjacent 
+            if they are co-authors on a math paper. </p>
+    </example>
+
+
+
+    <remark>
+       <p>Most of the examples we consider here are finite graphs, where V and E are both finite.</p>
+    </remark>
+   
+     <definition xml:id="def-def3">
+        <statement>
+            <p>
+                Let <m>G=(V,E)</m> be a graph. For a vertex <m>x\in V</m> the degree <m>d(x)</m> of x is defined as the number of edges that contain <m>x</m>.
+                </p> 
+        </statement>
+    </definition>
+
+    <p>We are ready for our first result. This is often called the Handshaking Lemma due
+        to its interpretation.</p>
+
+    <theorem xml:id="thm1">
+        <statement>
+            <p>
+                If <m>G=(V,E)</m> is a finite graph, then 
+                <men xml:id="eq1">
+                    \sum_{x\in V}d(x)=2|E|.
+                </men>
+                
+            </p>
+        </statement>
+    </theorem>
+    
+    <p> The following is a consequence of 
+     <xref ref="thm1"/>.</p>
+
+    <corollary xml:id="cor1">
+        <statement>
+            <p>
+              In any finite graph, the number of vertices with odd degree is even.  
+            </p>
+        </statement>
+    </corollary>
+
+    <definition xml:id="def-def2">
+        <statement>
+            <p>
+            Two graphs <m>G = (V,E)</m> and <m>H=(W,F)</m> are isomorphic if 
+            there is a bijective function <m>h: V\to W</m> such that 
+            <me>
+                \forall x,y\in V, xy\in E \Leftrightarrow f(x)f(y)\in F.
+            </me> 
+            </p>
+        </statement>
+    </definition>
+
+    
+
+    
+
+    
+
+</section>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch1m315" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Graph Theory</title>
+
+  <introduction>
+    <p> Graph theory is the abstract study of networks. 
+      This is the textbook for the second undergraduate discrete math course 
+      Math315 at UD.
+      </p>
+  </introduction>
+
+  
+
+  
+
+
+
+  <!-- include sections -->
+  <xi:include href="c1s1.ptx" />
+  
+   <!-- include sections -->
+  <xi:include href="c1s2.ptx" />
+
+</chapter>

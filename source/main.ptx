@@ -5,14 +5,18 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+    <title>A Second Undergrad Course in Discrete Math</title>
+    <subtitle>Our first PreText attempt</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
-    <!-- Include chapters -->
-    <xi:include href="./ch-chapter-title.ptx" />
+    <!-- Include chapter1 -->
+    <xi:include href="./ch1m315.ptx" />
+    <!-- Include chapter2 -->
+    <xi:include href="./ch2m315.ptx" />
+    <!-- Include chapter3 -->
+    <xi:include href="./ch3m315.ptx" />
 
 
     <!-- Include backmatter -->
