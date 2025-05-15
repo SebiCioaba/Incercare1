@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="c1s2" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Basic Notions</title>
+<section xml:id="c3s2" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>The chromatic number</title>
 
 
     
-    <definition xml:id="def-something1">
+    <definition xml:id="def-propercol">
         <statement>
             <p>
                 Let <m>G=(V,E)</m> and <m>k\in \mathbb{N}</m>. 
@@ -16,8 +16,9 @@
         </statement>
     </definition>
 
+    
 
-    <definition xml:id="def-other">
+    <definition xml:id="def-chromnumb">
         <statement>
             <p>
             Let <m>G=(V,E)</m> be a graph. The chromatic number <m>\chi(G)</m> is the 

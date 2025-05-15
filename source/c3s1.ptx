@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="c3s1" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>The Independence Number</title>
+
+    <p>In many situations, one is interested in investigating subsets of vertices of a 
+        graph with certain properties. The most often studied such subsets are 
+        independent sets and cliques. </p>
+
+    
+    <definition xml:id="def-indset">
+        <statement>
+            <p>blabla
+                Let <m>G=(V,E)</m> be a graph. A subset of vertices <m>I</m> of <m>G</m> is called independent
+                if no two vertices in <m>I</m> are adjacent. 
+            </p>
+        </statement>
+    </definition>
+
+<figure xml:id="fig1c3s1">
+    <caption>A graph on 6 vertices</caption>
+<image width="60%">
+  <prefigure xmlns="https://prefigure.org"
+             label="prefigure-ex1c3s1">
+<diagram dimensions="(300,300)" margins="5">
+  <definition>graph={1:[2,3,4,6],2:[3],3:[4,5],4:[5],5:[6]}</definition>
+  <coordinates bbox="(-1,-1,1,1)">
+    <network directed="no" graph="graph" arrows="end"
+             scale="0.8" node-fill="#fcf" node-stroke="black"
+	     seed="2" labels="yes"
+	     tactile-node-size="40">
+    </network>
+  </coordinates>
+</diagram>
+</prefigure>
+</image>
+</figure>
+
+    <remark>
+        <p>In the graph in <xref ref="fig1c3s1"/>, the sets <m>\{1\}</m>, <m>\{1,5\}</m> and <m>\{2,4,6\}</m> are independent.</p>
+    </remark>
+
+     <remark>
+        <p>In the graph in <xref ref="fig1c3s1"/>, the sets <m>\{1,2\}</m> and <m>\{3,4,6\}</m> are not independent.</p>
+    </remark>
+
+
+   
+
+
+    <definition xml:id="def-clique">
+        <statement>
+            <p>
+                Let <m>G=(V,E)</m> be a graph. A subset of vertices <m>K</m> of <m>G</m> is called a clique
+                if any two vertices in <m>K</m> are adjacent. 
+            </p>
+        </statement>
+    </definition>
+
+<p>In the graph in <xref ref="fig1c3s1"/>, the sets <m>\{1,4\}</m> and <m>\{1,2,3\}</m> are cliques while the sets 
+<m>\{1,2,3,4\} </m> is not a clique.
+</p>
+
+ <definition xml:id="def-cliquenumber">
+        <statement>
+            <p>
+                Let <m>G=(V,E)</m> be a graph. The clique number <m>\omega(G)</m> of <m>G</m>
+                is the maximum size of an clique of <m>G</m>.
+            </p>
+        </statement>
+    </definition>
+
+
+</section>
+    
