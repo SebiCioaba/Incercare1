@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="c1s1" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <title>Examples</title>
+    <title>Examples and Basic Notions</title>
 
     <p>We are surrounded by networks: social (Facebook, X, Instagram), 
     communication (airlines, trains, highways), biological (?), collaboration (Bacon movie or Erdos collaboration).
@@ -45,7 +45,7 @@
 </figure>
 
 <p>
-    For the graph above, <m>V=\{1,2,3,4,5\}</m> and the edges are 
+    For the graph in  <xref ref="fig0c1s1"/>, <m>V=\{1,2,3,4,5\}</m> and the edges are 
     <me>
         \{1,2\}, \{1,3\}, \{1,4\}, \{2,3\}, \{4,5\}.
     </me>
@@ -53,10 +53,12 @@
 </p>
 
 
+
+
 <definition xml:id="def-def2">
         <statement>
             <p>
-            Let <m>n\in \mathbb{N}</m>. The complete graph <m>K_n</m> with <m>n</m> vertices 
+            Let <m>n\in \N</m>. The complete graph <m>K_n</m> with <m>n</m> vertices 
             is the graph whose vertex set is <m>\{1,\ldots,n\}</m>, where any two distinct 
             vertices are adjacent.
             </p>
@@ -103,10 +105,24 @@
      <definition xml:id="def-def3">
         <statement>
             <p>
-                Let <m>G=(V,E)</m> be a graph. For a vertex <m>x\in V</m> the degree <m>d(x)</m> of x is defined as the number of edges that contain <m>x</m>.
+                Let <m>G=(V,E)</m> be a graph. 
+                For a vertex <m>x\in V</m>, the neighborhood <m>N_G(x)</m> (or <m>N(x)</m> if the graph
+                <m>G</m> is clear from the context) of <m>x</m> is the set of neighbors of <m>x</m>:
+                <me>
+                    N_G(x)=\{y:y\in V\text{ and } y\sim x\}.
+                </me>
+                The degree <m>d_G(x)</m> (or <m>d(x)</m> if the graph <m>G</m> is clear 
+                from the context) of x is defined as the number of edges that contain <m>x</m>,
+                 <me>d_G(x)=|N_G(x)|</me>.
                 </p> 
         </statement>
     </definition>
+
+    <p>For the graph in  <xref ref="fig0c1s1"/>,
+    <me>
+        N(1)=\{2,3,4,5} \text{ and } d(1)=4.
+    </me>
+    </p>
 
     <p>We are ready for our first result. This is often called the Handshaking Lemma due
         to its interpretation.</p>
@@ -152,6 +168,11 @@
 	Let <m>G=(V,E)</m> and <m>H=(W,F)</m> be two graphs. If <m>G</m> and <m>H</m> are isomorphic, then
           <ol>
     <li><m>|V|=|W|</m></li>
+    <li>
+        <p>
+            For any <m>x\in V</m>, <m>d_G(x)=d_H(f(x))</m>.
+        </p>
+    </li>
     <li>The graphs <m>G</m> and <m>H</m> have the same degree sequence.</li>
     <li><m>|E|=|F|</m></li>
     <li>
@@ -164,14 +185,18 @@
   <proof>
     <p>
         <ol>
-        <li> <p>Assume that <m>f:V\rightarrow W</m> is an isomorphism between <m>G</m> and <m>H</m>. 
+        <li> <p>Assume that <m>f:V\to W</m> is an isomorphism between <m>G</m> and <m>H</m>. 
         
-        Because <m>f</m> is a bijection, we deduce that <m>|V|=|W|</m>.</m></li>
+        Because <m>f</m> is a bijective function, we deduce that <m>|V|=|W|</m>.</p></li>
         <li>
             <p>
-                
-        
-            </p>
+                Let <m>x\in V</m>. For any <m>y\in V</m> that is adjacent with <m>x</m>, <m>f(y)\in W</m> is adjacent 
+                to <m>f(x)</m>. The function <m>f</m> restricted to the neighborhood of <m>x</m> is a bijection between
+                the neighborhood of <m>x</m> and the neighborhood of <m>f(x)</m>. Therefore, 
+                <me>
+                    d_G(x)=|N_G(x)|=|N_H(f(x))|=d_H(f(x)).
+                </me>
+                </p>
         </li>
         </ol>
     </p>
