@@ -7,10 +7,16 @@
   <bibinfo>
   
     <author>
-      <personname>You</personname>
-      <department>Your department</department>
-      <institution>Your institution</institution>
+      <personname>Novi Bong</personname>
+      <department>Math</department>
+      <institution>UD</institution>
     </author>
+    <author>
+      <personname>Sebastian Cioaba</personname>
+      <department>Math</department>
+      <institution>UD</institution>
+    </author>
+
     <date>
       <today />
     </date>

@@ -3,6 +3,10 @@
 <chapter xml:id="ch3m315" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Graph Coloring</title>
 
-    
+    <!-- include sections -->
+  <xi:include href="c3s1.ptx" />
+
+   <!-- include sections -->
+  <xi:include href="c3s2.ptx" />
 
 </chapter>
