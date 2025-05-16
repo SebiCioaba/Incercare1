@@ -9,6 +9,7 @@
   <!-- include sections -->
   <xi:include href="c2s2.ptx" />
 
-  
+  <!-- include sections -->
+  <xi:include href="c2s3.ptx" />
 
 </chapter>
