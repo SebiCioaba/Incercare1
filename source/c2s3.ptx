@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="c2s3" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Minimum Spanning Tree</title>
+
+   <definition xml:id="def-minSpanTree">
+    <statement>
+        <p>
+            A <em>spanning tree</em> of a graph <m>G</m> is a subgraph of <m>G</m> that
+             spans <m>G</m> (contains all nodes of <m>G</m>) and is a tree 
+             (a connected, acyclic graph).
+        </p>
+    </statement>
+   </definition>
+
+   <p>
+    Let <m>G</m> be a connected graph. Define a weight function: 
+<md>
+    <mrow>w: E(G) &amp; \rightarrow [0,\infty) </mrow>
+  <mrow>e &amp; \mapsto w(e) </mrow>  
+</md>
+
+ </p>
+ <p>
+    Let <m>H</m> be a subgraph of <m>G</m>, then the weight of <m>H</m> is given 
+    by <me>w(H)=\sum_{e\in H} w(e)</me>.
+ </p>
+
+<definition xml:id="def-">
+    <statement>
+        <p>
+           A <em>minimum spanning tree</em> (MST) is a spanning tree for <m>G</m>
+           which has minimum total weight. 
+        </p>
+    </statement>
+</definition>
+ 
+
+    <p>
+       <em> Minimum spanning tree problem </em> is a problem to find a spanning tree of <m>G</m> of minimum weight.
+    </p>
+<example>
+    <p>
+        In the graph <m>G</m> below, find a spanning tree of <m>G</m> of minimum weight. 
+    </p>
+    <figure xml:id="MST1">
+            <caption>Example: Minimum Spanning Tree</caption>
+        <image width="60%">
+  <prefigure xmlns="https://prefigure.org"
+             label="MST1">
+        <diagram dimensions="(300,300)" margins="5">
+  <definition>graph={1:[2,3,5],2:[4,5,6],3:[5],4:[6],5:[6]}</definition>
+  <coordinates bbox="(-1,-1,1,1)">
+    <network directed="yes" graph="graph"
+             scale="0.8" node-fill="#fcf" node-stroke="black"
+	     seed="1" labels="yes"
+	     tactile-node-size="30">
+    </network>
+  </coordinates>
+</diagram>
+ </prefigure>
+</image>
+    </figure>
+</example>
+
+</section>
