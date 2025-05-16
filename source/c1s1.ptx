@@ -45,7 +45,7 @@
 </figure>
 
 <p>
-    For the graph in     
+    For the graph in <xref ref="fig0c1s1"/>
 </p>
 
 
@@ -116,8 +116,12 @@
 
     <p>For the graph in <xref ref="fig0c1s1"/>,
     <me>
-        N(1)=\{2,3,4,5} \text{ and } d(1)=4.
+        N(1)=\{2,3,4,5\} \text{ and } d(1)=4.
     </me>
+    and
+    <me>
+        N(3)=\{1,2\} \text{ and } d(3)=2.
+    </me>    
     </p>
 
     <p>We are ready for our first result. This is often called the Handshaking Lemma due
